@@ -31,17 +31,23 @@
   getProducts() {
     console.log(products)
      };
-// // getProductById(){
-
+ getProductById(){
+if (this.code&&this.code)
+{
+return this.code
+    }
+    else {
+      console.log('No existe lo que buscas')
     }
 
    
 
-// } console.log (products)
+ } 
+}
  
 let instancia1 = new ProductManager();
 instancia1.getProducts();
 instancia1.addProduct();
 instancia1.getProducts();
-
+instancia1.getProductById(2);
 console.log(instancia1);
